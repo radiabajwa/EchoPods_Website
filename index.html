@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halcyon One — Silence, sculpted.</title>
+<meta name="description" content="Halcyon One: spatial audio earbuds machined from a single billet of aerospace titanium, tuned by ear, calibrated by algorithm.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="#top" aria-label="Halcyon home">
+      <span class="brand__orb" aria-hidden="true"></span>
+      <span class="brand__word">Halcyon</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#overview">Overview</a>
+      <a href="#craft">Design</a>
+      <a href="#sound">Sound</a>
+      <a href="#compare">Compare</a>
+      <a href="#preorder">Pre-order</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+        <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2 12h2.4M19.6 12H22M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+        <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+      </button>
+      <a class="btn btn--ghost btn--small nav__preorder-btn" href="#preorder">Pre-order</a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#overview">Overview</a>
+    <a href="#craft">Design</a>
+    <a href="#sound">Sound</a>
+    <a href="#compare">Compare</a>
+    <a href="#preorder">Pre-order</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__aura" aria-hidden="true">
+      <svg viewBox="0 0 800 800" class="aura-svg">
+        <defs>
+          <linearGradient id="auraGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="var(--accent-teal)"/>
+            <stop offset="100%" stop-color="var(--accent-violet)"/>
+          </linearGradient>
+          <linearGradient id="auraGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="var(--accent-gold)"/>
+            <stop offset="100%" stop-color="var(--accent-violet)"/>
+          </linearGradient>
+        </defs>
+        <circle class="ring ring--1" cx="400" cy="400" r="260" fill="none" stroke="url(#auraGrad1)" stroke-width="1.4"/>
+        <circle class="ring ring--2" cx="400" cy="400" r="210" fill="none" stroke="url(#auraGrad2)" stroke-width="1"/>
+        <circle class="ring ring--3" cx="400" cy="400" r="320" fill="none" stroke="url(#auraGrad1)" stroke-width="0.6"/>
+      </svg>
+    </div>
+
+    <p class="eyebrow reveal">Introducing Halcyon&nbsp;One</p>
+    <h1 class="hero__title reveal">
+      <span class="hero__title-line">Silence,</span>
+      <span class="hero__title-line hero__title-line--italic">sculpted.</span>
+    </h1>
+    <p class="hero__sub reveal">
+      Spatial audio earbuds machined from a single billet of aerospace titanium —
+      tuned by ear, calibrated by algorithm.
+    </p>
+    <div class="hero__cta reveal">
+      <a href="#preorder" class="btn btn--primary">Pre-order — $349</a>
+      <button class="btn btn--ghost" id="watchFilm" type="button">
+        <svg class="icon icon--play" viewBox="0 0 24 24" aria-hidden="true"><polygon points="9,7 18,12 9,17"/></svg>
+        Watch the film
+      </button>
+    </div>
+
+    <div class="hero__stage reveal" aria-hidden="true">
+      <div class="case">
+        <div class="case__lid"></div>
+        <div class="case__body">
+          <div class="case__bud case__bud--l"></div>
+          <div class="case__bud case__bud--r"></div>
+          <div class="case__led"></div>
+        </div>
+        <div class="case__shadow"></div>
+      </div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- OVERVIEW / FEATURES -->
+  <section class="section" id="overview">
+    <div class="section__head reveal">
+      <p class="eyebrow">Overview</p>
+      <h2>Four decisions, one obsession.</h2>
+      <p class="section__sub">Every part earns its place. Nothing here is decoration.</p>
+    </div>
+
+    <div class="grid grid--features">
+      <article class="card reveal">
+        <svg class="card__icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 6c7 0 12 6 12 14M20 6C13 6 8 12 8 20M14 14a8 8 0 0 1 12 0M26 26a8 8 0 0 1-12 0" fill="none"/><circle cx="20" cy="20" r="3"/></svg>
+        <h3>Adaptive spatial audio</h3>
+        <p>Sound that tracks your head, not your device — nine-axis motion sensing keeps the stage locked in place as you move.</p>
+      </article>
+
+      <article class="card reveal">
+        <svg class="card__icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 20a12 12 0 0 1 24 0M12 20a8 8 0 0 1 16 0" fill="none"/><path d="M6 20v4a2 2 0 0 0 2 2h2v-8H8a2 2 0 0 0-2 2ZM34 20v4a2 2 0 0 1-2 2h-2v-8h2a2 2 0 0 1 2 2Z"/></svg>
+        <h3>–42dB of silence</h3>
+        <p>Dual-feedforward noise cancellation removes the room, so what's left is only what you chose to hear.</p>
+      </article>
+
+      <article class="card reveal">
+        <svg class="card__icon" viewBox="0 0 40 40" aria-hidden="true"><rect x="10" y="8" width="20" height="24" rx="6" fill="none"/><circle cx="20" cy="20" r="4"/></svg>
+        <h3>Aerospace titanium</h3>
+        <p>Each shell is milled from one solid billet — no seams, no plastic, ounces lighter than it looks.</p>
+      </article>
+
+      <article class="card reveal">
+        <svg class="card__icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 8v6M20 8a12 12 0 1 1-8.5 3.5" fill="none"/></svg>
+        <h3>30-hour case</h3>
+        <p>A full week of mornings on one charge. Five minutes in the case buys three hours of playback.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- SOUND SIGNATURE -->
+  <section class="section section--dark" id="sound">
+    <div class="section__head reveal">
+      <p class="eyebrow">Sound</p>
+      <h2>A signature you can see.</h2>
+      <p class="section__sub">Scroll to hear the range. Every bar is real driver response, not decoration.</p>
+    </div>
+
+    <div class="waveform reveal" id="waveform" aria-hidden="true"></div>
+
+    <div class="grid grid--stats">
+      <div class="stat">
+        <span class="stat__num">40<span class="stat__unit">kHz</span></span>
+        <span class="stat__label">Frequency ceiling</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">–42<span class="stat__unit">dB</span></span>
+        <span class="stat__label">Noise floor</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">9<span class="stat__unit">-axis</span></span>
+        <span class="stat__label">Motion tracking</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">0.9<span class="stat__unit">ms</span></span>
+        <span class="stat__label">Head-tracking latency</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CRAFT / PROCESS -->
+  <section class="section" id="craft">
+    <div class="section__head reveal">
+      <p class="eyebrow">Design</p>
+      <h2>Three passes. No shortcuts.</h2>
+      <p class="section__sub">The order matters — each stage depends on the one before it.</p>
+    </div>
+
+    <ol class="process">
+      <li class="process__item reveal">
+        <span class="process__num">01</span>
+        <div>
+          <h3>Milled</h3>
+          <p>A single titanium billet is cut on a five-axis CNC over 40 minutes, then hand-polished to a satin finish.</p>
+        </div>
+      </li>
+      <li class="process__item reveal">
+        <span class="process__num">02</span>
+        <div>
+          <h3>Tuned</h3>
+          <p>Acoustic engineers voice every driver by ear against a reference room before any DSP is applied.</p>
+        </div>
+      </li>
+      <li class="process__item reveal">
+        <span class="process__num">03</span>
+        <div>
+          <h3>Calibrated</h3>
+          <p>An in-app ear scan builds a personal response curve, matched to the shape of your own ear canal.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- COLORWAYS -->
+  <section class="section section--colorway" id="colorways">
+    <div class="colorway">
+      <div class="colorway__text reveal">
+        <p class="eyebrow">Finish</p>
+        <h2>Choose your metal.</h2>
+        <p class="section__sub">Three finishes, one shell. Anodized, not painted — the color goes all the way through.</p>
+        <div class="swatches" role="radiogroup" aria-label="Choose a finish">
+          <button class="swatch swatch--graphite is-active" type="button" role="radio" aria-checked="true" data-color="graphite">
+            <span class="swatch__dot"></span> Graphite
+          </button>
+          <button class="swatch swatch--champagne" type="button" role="radio" aria-checked="false" data-color="champagne">
+            <span class="swatch__dot"></span> Champagne
+          </button>
+          <button class="swatch swatch--glacier" type="button" role="radio" aria-checked="false" data-color="glacier">
+            <span class="swatch__dot"></span> Glacier
+          </button>
+        </div>
+      </div>
+      <div class="colorway__stage reveal" aria-hidden="true">
+        <div class="case case--display" id="colorCase">
+          <div class="case__lid"></div>
+          <div class="case__body">
+            <div class="case__bud case__bud--l"></div>
+            <div class="case__bud case__bud--r"></div>
+            <div class="case__led"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARE -->
+  <section class="section" id="compare">
+    <div class="section__head reveal">
+      <p class="eyebrow">Compare</p>
+      <h2>Where the difference is measured.</h2>
+    </div>
+
+    <div class="table-wrap reveal">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th scope="col">Spec</th>
+            <th scope="col">Halcyon One</th>
+            <th scope="col">Standard earbuds</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Shell material</th>
+            <td>Milled titanium</td>
+            <td>Injection-molded plastic</td>
+          </tr>
+          <tr>
+            <th scope="row">Noise floor</th>
+            <td>–42dB, dual-feedforward</td>
+            <td>–24dB, single-mic</td>
+          </tr>
+          <tr>
+            <th scope="row">Spatial tracking</th>
+            <td>9-axis, 0.9ms latency</td>
+            <td>Not supported</td>
+          </tr>
+          <tr>
+            <th scope="row">Ear-fit calibration</th>
+            <td>Personal scan profile</td>
+            <td>Three generic tip sizes</td>
+          </tr>
+          <tr>
+            <th scope="row">Battery, case included</th>
+            <td>30 hours</td>
+            <td>18 hours</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="section section--quote">
+    <blockquote class="quote reveal">
+      <p>“We didn't chase louder. We chased quieter — until the only thing left was the music.”</p>
+      <footer>
+        <span class="quote__name">Mara Lindqvist</span>
+        <span class="quote__role">Principal Acoustic Engineer, Halcyon Labs</span>
+      </footer>
+    </blockquote>
+  </section>
+
+  <!-- PREORDER -->
+  <section class="section" id="preorder">
+    <div class="preorder-panel reveal">
+      <div class="preorder-panel__aura" aria-hidden="true"></div>
+      <div class="preorder-panel__content">
+        <p class="eyebrow">Availability</p>
+        <h2>Reserve yours.</h2>
+        <p class="section__sub">Ships in October. Reserving costs nothing until the day it leaves the mill.</p>
+
+        <form class="preorder-form" id="preorderForm" novalidate>
+          <label class="sr-only" for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@domain.com" required autocomplete="email">
+          <button type="submit" class="btn btn--primary">Reserve — $0 today</button>
+        </form>
+        <p class="preorder-form__note" id="preorderNote" role="status" aria-live="polite">No payment required until shipment.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <a class="brand brand--footer" href="#top" aria-label="Halcyon home">
+      <span class="brand__orb" aria-hidden="true"></span>
+      <span class="brand__word">Halcyon</span>
+    </a>
+    <nav class="footer__links" aria-label="Footer">
+      <a href="#overview">Overview</a>
+      <a href="#craft">Design</a>
+      <a href="#sound">Sound</a>
+      <a href="#compare">Compare</a>
+      <a href="#preorder">Pre-order</a>
+    </nav>
+    <div class="footer__social" aria-label="Social links">
+      <a href="#" aria-label="Halcyon on X"><svg viewBox="0 0 24 24"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+      <a href="#" aria-label="Halcyon on Instagram"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5" fill="none"/><circle cx="12" cy="12" r="3.5" fill="none"/><circle cx="16.6" cy="7.4" r="0.9"/></svg></a>
+    </div>
+  </div>
+  <div class="footer__legal">
+    <p>© 2026 Halcyon Labs. All rights reserved. A concept design, not an available product.</p>
+  </div>
+</footer>
+
+<div class="film-overlay" id="filmOverlay" hidden>
+  <button class="film-overlay__close" id="filmClose" type="button" aria-label="Close film">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+  </button>
+  <div class="film-overlay__content">
+    <div class="film-overlay__orb" aria-hidden="true"></div>
+    <p>This is a concept demo — imagine 90 seconds of titanium catching the light.</p>
+  </div>
+</div>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top" hidden>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
